@@ -6,7 +6,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const token = searchParams.get("token") || "";
     // Append token to the Rocket.Chat config URL
-    const url = `https://spruce.rocket.chat/api/v1/livechat/config?token=${token}`;
+    const url = `${process.env.NEXT_PUBLIC_ROCKETCHAT_URL}/api/v1/livechat/config?token=${token}`;
     const response = await fetch(url, {
       method: "GET",
       headers: { "Content-Type": "application/json" },

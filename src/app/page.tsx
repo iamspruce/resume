@@ -222,14 +222,15 @@ export default function Home() {
                 to news feeds and receiving updates in real-time.
               </div>
               <div className="flex gap-4 space-x-4 mt-2">
-                <a href="https://whatsnews.vercel.app" className="flex gap-2">
-                  GitHub <ExternalLink size={14} className="inline ml-1" />
-                </a>
                 <a
-                  href="https://www.npmjs.com/package/use-search-react"
+                  href="https://github.com/iamspruce/whatsnews"
                   className="flex gap-2"
                 >
-                  npm <ExternalLink size={14} className="inline ml-1" />
+                  GitHub <ExternalLink size={14} className="inline ml-1" />
+                </a>
+                <a href="https://whatsnews.vercel.app" className="flex gap-2">
+                  Project link{" "}
+                  <ExternalLink size={14} className="inline ml-1" />
                 </a>
               </div>
             </li>

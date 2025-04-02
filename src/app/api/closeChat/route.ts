@@ -12,8 +12,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const ROCKETCHAT_URL =
-      process.env.NEXT_PUBLIC_ROCKETCHAT_URL || "https://spruce.rocket.chat";
+    const ROCKETCHAT_URL = process.env.NEXT_PUBLIC_ROCKETCHAT_URL;
 
     const response = await fetch(
       `${ROCKETCHAT_URL}/api/v1/livechat/room.close`,

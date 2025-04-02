@@ -13,7 +13,7 @@ export async function GET(request: Request) {
     }
     // Call Rocket.Chat's endpoint to retrieve (or create) a room
     const response = await fetch(
-      `https://spruce.rocket.chat/api/v1/livechat/room?token=${token}`,
+      `${process.env.NEXT_PUBLIC_ROCKETCHAT_URL}/api/v1/livechat/room?token=${token}`,
       {
         method: "GET",
         headers: {

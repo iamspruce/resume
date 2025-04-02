@@ -13,8 +13,7 @@ export async function GET(request: Request) {
       );
     }
 
-    const ROCKETCHAT_URL =
-      process.env.NEXT_PUBLIC_ROCKETCHAT_URL || "https://spruce.rocket.chat";
+    const ROCKETCHAT_URL = process.env.NEXT_PUBLIC_ROCKETCHAT_URL;
 
     const response = await fetch(
       `${ROCKETCHAT_URL}/api/v1/livechat/messages.history/${rid}?token=${token}`,

@@ -7,7 +7,7 @@ export async function POST(request: Request) {
     // Call Rocket.Chat's visitor registration endpoint.
 
     const response = await fetch(
-      "https://spruce.rocket.chat/api/v1/livechat/visitor",
+      `${process.env.NEXT_PUBLIC_ROCKETCHAT_URL}/api/v1/livechat/visitor`,
       {
         method: "POST",
         headers: {

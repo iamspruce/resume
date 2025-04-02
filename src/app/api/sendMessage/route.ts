@@ -12,7 +12,7 @@ export async function POST(request: Request) {
       );
     }
     const response = await fetch(
-      "https://spruce.rocket.chat/api/v1/livechat/message",
+      `${process.env.NEXT_PUBLIC_ROCKETCHAT_URL}/api/v1/livechat/message`,
       {
         method: "POST",
         headers: {
